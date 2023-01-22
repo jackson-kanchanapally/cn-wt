@@ -19,7 +19,7 @@ void  main()
     {
         scanf("%d",&b[i]);
     }
-    for(i=n1+1;i<=n1+n2;i++)
+    for(i=n1+1;i<=m;i++)
     {
         a[i] = 0;
     }
