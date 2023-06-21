@@ -8,3 +8,13 @@ while(count<n):
     num1=num2
     num2=num3
     count+=1
+# x=int(input("enter a number:"))
+# a=0
+# b=1
+
+# for i in range(0,x):
+#     sum=a+b
+#     a=b
+#     b=sum
+  
+#     print(sum)
