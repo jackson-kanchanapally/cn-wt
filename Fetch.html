@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ii"></h1>
+    <script>
+     const ii=document.getElementById('ii')
+        const url='https://jsonplaceholder.typicode.com/posts'
+        fetch(url).then((res)=>{
+            return res.json()
+        }).then((data)=>{
+            data.map(i=>(
+                ii.innerHTML=`${i.id}->${i.title}<br/>`
+            ))
+         
+        }).catch((err)=>{
+            console.log(err)
+        })
+        
+    </script>
+</body>
+</html>

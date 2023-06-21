@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body style="background-color: rgb(42, 40, 40);">
+    <input id="fn" type="number" placeholder="Enter first number" style="margin-bottom: 15px;"/>
+    <br/>
+    <input id="sn" style="margin-bottom: 25px;" type="number" placeholder="Enter second number" />
+    <br/>
+    <input id="op" style="margin-bottom: 25px;" type="number" placeholder="Enter operator" />
+    <br/>
+    <!-- <button id="add" value="+" onclick="ev('+')">+</button>
+    <button id="sub" value="-" onclick="ev('-')">-</button>
+    <button id="mul" value="*" onclick="ev('*')">*</button>
+    <button id="div" value="/" onclick="ev('/')">/</button>
+    <button id="mod" value="%" onclick="ev('%')">%</button>
+    <br/> -->
+    <button style="margin-top: 25px;" id="cal" onclick="result">Calculate</button>
+    <div style="background-color: white; width:300px;height:30px;margin-top: 20px;" id="res"></div>
+    <script>
+         const first=document.getElementById('fn').value
+         const second=document.getElementById('sn').value
+         const op=document.getElementById('op').value
+         const res=document.getElementById('res')
+         
+        const a=10
+        const b=46
+        const c=a+b
+        res.innerHTML=c
+         function result()
+         {
+            const res=eval(cal);
+            console.log(res)
+         }
+        // const add=document.getElementById('add')
+        // const sub=document.getElementById('sub')
+        // const mul=document.getElementById('mul')
+        // const mod=document.getElementById('mod')
+        // const div=document.getElementById('div').value
+        // function cal()
+        // {
+        //     function ev()
+        // }
+
+    </script>
+</body>
+</html>

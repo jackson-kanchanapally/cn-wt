@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <form onsubmit="sub()">
+        <input id="email" type="email" placeholder="email"/>
+        
+        <input id='pass' type="text" placeholder="password"/>
+        <input type="submit" id="btn" value="submit" onclick="sub()"></input>
+    </form>
+</body>
+</html> -->
+<html>
+    <head><title>validation</title>
+    <script language="Javascript">
+    function fun(){
+    var uname1=document.getElementById("uname").value;
+    var uname=document.getElementById("uname");
+    var pswd1=document.getElementById("pswd").value;
+
+    var us=document.getElementById("us")
+    var ps=document.getElementById("ps")
+
+    if(uname1==""||pswd1=="")
+    {
+    alert("enter details");
+    }
+    else if(uname1.length<10)
+    {
+    us.innerHTML="<p style='color:red;'>please enter minimum 10 chars</p>"
+    uname.style.border="3px solid red"
+    }
+    else if(pswd1.length<8)
+    {
+    alert("password must contains 8 characters");
+    }
+    else
+    {
+    alert("login done");
+    }
+    }
+    </script>
+    </head>
+    <body>
+     <center>
+    <label>username</label>
+    <input type="text" id="uname"></input>
+    </br>
+      <div id="us"></div>
+    <label>password</label>
+    
+    <input type="password" id="pswd"></input>
+    </br>
+    <div id="ps"></div>
+    
+    <input type="button" onClick ="fun()"value="submit"</input>
+    </center>
+    </body>
+    </html>
