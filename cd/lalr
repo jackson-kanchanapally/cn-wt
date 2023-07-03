@@ -6,11 +6,11 @@
 %}
 
 %%
-[0-9]+{ yyval.dval = atoi(yytext);
+[0-9]+{yyval.dval = atoi(yytext);
           return DIGIT;
         }
 
-\n \. return yytext[0]; 
+\n  return yytext[0]; 
 %%
 
 //lalr.y
