@@ -2,11 +2,11 @@
 
 %{
 #include <stdio.h>
-#include "y.tab.h"
+#include "ytab.h"
 %}
 
 %%
-[0-9]+{ yyval.dval = atof(yytext);
+[0-9]+{ yyval.dval = atoi(yytext);
           return DIGIT;
         }
 
