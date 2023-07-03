@@ -15,7 +15,7 @@ char pop(){
         top--;
         return ch;
     }
-    return '@';
+   return '@';
 }
 void dis()
 {
@@ -27,18 +27,17 @@ void dis()
 void main()
 {
     int i,k,l;
-    char str[30],op,temp,temp2;
+    char str[30],op,temp;
     printf("\n\t slr E->E+E|E-E|E*E|E/E|id\n\t enter expression");
     scanf("%s",str);
     l=strlen(str);
     printf("\n\t");
     for(i=0;i<l;i++)
-
     {
         if(str[i]=='i'&& str[i+1]=='d')
         {
             str[i]=' ';
-            str[i+1]=='E';
+            str[i+1]='E';
             dis();
             printf("id");
             push('E');
@@ -54,15 +53,13 @@ void main()
         op=pop();
         if(op=='@')
         {
-            printf("\n\t\t\t$");
+            printf("\n\t$");
             break;
-
         }
         if(op=='+'||op=='-'||op=='*'||op=='/')
         {
-            temp2=pop();
-            if(temp2!='E')
-
+            temp=pop();
+            if(temp!='E')
             {
                 printf("error");
                 exit(1);
@@ -72,6 +69,6 @@ void main()
                 dis();
             }
         }
-        temp=op;
+        //temp=op;
     }
 }
