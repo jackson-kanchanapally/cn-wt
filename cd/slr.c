@@ -56,7 +56,7 @@ void main()
             printf("\n\t$");
             break;
         }
-        if(op=='+'||op=='-'||op=='*'||op=='/')
+        else if(op=='+'||op=='-'||op=='*'||op=='/')
         {
             temp=pop();
             if(temp!='E')
