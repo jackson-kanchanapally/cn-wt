@@ -6,7 +6,7 @@
 %}
 
 %%
-[0-9]+{yylval.dval = atoi(yytext);
+[0-9]+{yylval.dval = atof(yytext);
           return DIGIT;
         }
 
