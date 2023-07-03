@@ -29,7 +29,7 @@
 %%
 
 line : expr '\n' {
-    printf("%g\n", $1);
+    printf("result %g\n", $1);
 }
 ;
 
@@ -65,6 +65,6 @@ int yywrap() {
 }
 
 void yyerror(char *s) {
-    printf("%s", s);
+    printf("error %s", s);
 }
 
