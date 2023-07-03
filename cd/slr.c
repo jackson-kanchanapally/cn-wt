@@ -67,7 +67,8 @@ void main()
             else{
                 push('E');
                 dis();
-                baby Umahhhhhhh petava
+                baby Umahhhhhhh petava+
+                
             }
         }
         //temp=op;
