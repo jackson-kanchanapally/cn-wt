@@ -31,7 +31,7 @@ void main()
     printf("\n\t slr E->E+E|E-E|E*E|E/E|id\n\t enter expression");
     scanf("%s",str);
     l=strlen(str);
-    printf("\n\t");
+    printf("\n\t$");
     for(i=0;i<l;i++)
     {
         if(str[i]=='i'&& str[i+1]=='d')
