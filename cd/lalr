@@ -60,6 +60,10 @@ void yyerror(char *s) {
 
 
 Output :  
+lex lalr.l
+yacc -d lalr.y
+gcc lex.yy.c y.tab.c -w
+./a.out 
 
 100+100  
 result 200
