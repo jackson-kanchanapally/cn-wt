@@ -15,7 +15,7 @@ b1=CD_ageincome/CD_ageage
 b0=mean_income-b1*mean_age
 print("Estimated Coefficients :")
 print("b0 =", b0, "\nb1 =", b1)
-plt.scatter(age,income,color='b',market='o')
+plt.scatter(age,income,color='b',marker='o')
 response_Vec=b0+b1*age
 plt.plot(age,response_Vec,color='r')
 plt.xLabel('Age')
