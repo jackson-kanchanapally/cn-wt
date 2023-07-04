@@ -1,0 +1,16 @@
+%{
+#include <stdio.h>
+%}
+
+%%
+void|return|int|float|char {printf("reserved keyword");}
+[A-Z a-z _]+[0-9 A-Z a-z _]*{printf("valid ");}
+[0-9]+[0-9 A-Z a-z _]*{printf("invalid ");}
+
+%%
+int yywrap(void){}
+int main()
+{
+yylex();
+return 0;
+}

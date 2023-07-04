@@ -43,7 +43,6 @@ factor : '(' expr ')' {$$ = $2;}
        | DIGIT ;
 
 %%
-
 int main() {
     yyparse();
     return 0;

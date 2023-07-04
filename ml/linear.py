@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 dataFrame=pd.read_csv('Age_Income.csv')
 age=dataFrame['Age']
